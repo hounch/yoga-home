@@ -1,103 +1,189 @@
 import Image from "next/image";
+import { Button } from "./ui/button";
+import { ClassCard } from "./ui/card";
+import { ClassesCarousel } from "./ui/carousel";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+    <>
+      <header>
+        <div className="container mr-auto ml-auto pr-[20px] pl-[20px] max-w-[1200px]">
+          <div className="header-content flex justify-between items-center h-[83]">
             <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+              className="header-content_logo"
+              src="/logo.png"
+              alt="logo"
+              quality={100}
+              width={56}
+              height={42}
+            ></Image>
+            <nav className="text-[#494542]">
+              <a className="mr-[20px]" href="#">
+                Студия
+              </a>
+              <a className="mr-[20px]" href="#">
+                Классы
+              </a>
+              <a className="mr-[20px]" href="#">
+                Преподаватели
+              </a>
+              <a className="mr-[20px]" href="#">
+                Мероприятия
+              </a>
+              <a className="mr-[20px]" href="#">
+                Массаж
+              </a>
+              <a className="mr-[20px]" href="#">
+                Аренда
+              </a>
+              <a href="#">Контакты</a>
+            </nav>
+            <div className="header-content_last">
+              <a>
+                <Button variant="outline" className="h-[40px] w-[173px]">
+                  Записаться на йогу
+                </Button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main className="relative rounded-[20px]">
+        {/* h-[273] */}
+        <div className="container mt-[31px] mr-auto ml-auto pr-[20px] pl-[20px] max-w-[1200px]">
+          <div className="main-content">
+            <h2 className="font-[400px] text-[42px]">
+              Добро пожаловать в Йога Хом,
+              <br /> место силы и спокойствия
+            </h2>
+            <div className="flex mt-[40px] mb-[61px]">
+              <Button
+                variant="solid"
+                className="flex h-[40px] w-[211px] pr-[0] justify-center items-center font-medium mr-[32px]"
+              >
+                Записаться на йогу
+                <svg
+                  className="ml-[14px]"
+                  width="23"
+                  height="7"
+                  viewBox="0 0 23 7"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M22.2999 3.5587C22.4607 3.39792 22.4607 3.13724 22.2999 2.97646L19.6798 0.35635C19.519 0.195568 19.2583 0.195568 19.0976 0.35635C18.9368 0.517133 18.9368 0.777813 19.0976 0.938596L21.4265 3.26758L19.0976 5.59656C18.9368 5.75735 18.9368 6.01803 19.0976 6.17881C19.2583 6.33959 19.519 6.33959 19.6798 6.17881L22.2999 3.5587ZM-3.59928e-08 3.67929L22.0088 3.67929L22.0088 2.85587L3.59928e-08 2.85587L-3.59928e-08 3.67929Z"
+                    fill="#EEE5DC"
+                  />
+                </svg>
+              </Button>
+              <Button
+                variant="outline"
+                className=" flex h-[40px] w-[228px] justify-center items-center font-medium"
+              >
+                Проконсультироваться
+                <svg
+                  className="ml-[10px]"
+                  width="23"
+                  height="7"
+                  viewBox="0 0 23 7"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M22.2999 3.62023C22.4607 3.45944 22.4607 3.19876 22.2999 3.03798L19.6798 0.417874C19.519 0.257091 19.2583 0.257091 19.0976 0.417874C18.9368 0.578656 18.9368 0.839337 19.0976 1.00012L21.4265 3.3291L19.0976 5.65809C18.9368 5.81887 18.9368 6.07955 19.0976 6.24033C19.2583 6.40112 19.519 6.40112 19.6798 6.24033L22.2999 3.62023ZM-3.59928e-08 3.74081L22.0088 3.74081L22.0088 2.91739L3.59928e-08 2.91739L-3.59928e-08 3.74081Z"
+                    fill="#494542"
+                  />
+                </svg>
+              </Button>
+            </div>
+            <div className="relative z-0">
+              <Image
+                src="/group.png"
+                alt="group"
+                width={1200}
+                height={511}
+              ></Image>
+            </div>
+          </div>
         </div>
       </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+      <section className="studio">
+        <div className="container mr-auto ml-auto max-w-[1200px] pr-[20px] pl-[20px] pt-[90px]">
+          <div className="studio-content text-center text-[#494542]">
+            <h2 className="font-[400px] text-[42px]">
+              Йога хом — это дом здорового тела,
+              <br />
+              красоты и внутреннего роста, место
+              <br />
+              силы, где уютно, как дома
+            </h2>
+            <p className="text-[22px] mt-[35px]">
+              Уже 4 года мы помогаем вам обрести красивую осанку
+              <br />и здоровую спину, познать себя и свой внутренний мир,
+              <br />
+              стать увереннее и счастливее
+            </p>
+          </div>
+          <div className="flex justify-evenly mt-[91px] mb-[33px]">
+            <Image
+              src="/studio1.png"
+              alt="studio1"
+              width={374}
+              height={247}
+            ></Image>
+            <Image
+              src="/studio2.png"
+              alt="studio2"
+              width={374}
+              height={247}
+            ></Image>
+            <Image
+              src="/studio3.png"
+              alt="studio3"
+              width={374}
+              height={247}
+            ></Image>
+          </div>
+        </div>
+      </section>
+      <section className="classes">
+        <div className="container mr-auto ml-auto max-w-[1200px] pr-[20px] pl-[20px] pt-[88px]">
+          <div className="classes-content text-center text-[#494542]">
+            <h2 className="font-[400px] text-[42px]">
+              Выбери одно или несколько
+              <br />
+              направлений йоги себе по душе
+            </h2>
+            <p className="text-[22px] mt-[35px]">
+              Соединитесь со своим телом и душой, войдя
+              <br />в состояние умиротворения и спокойствия с помощью
+              <br />
+              авторских техник преподавателей нашей студии
+            </p>
+          </div>
+          <div className="carousel flex justify-evenly">
+            {/* <ClassCard
+              imageSrc="/class1.png"
+              title="Йога критического выравнивания"
+              type="группа"
+              cost="от 400"
+              description="Йога критического выравнивания (Critical Alignment Yoga) — новая голландская методика восстановления позвоночника. В практике используется ряд опорных приспособлений: планка для снятия напряжения мышц вдоль позвоночника, войлочный валик, 
+бэкбендер и хэдстендер."
+              duration="1 час 15 минут"
+              className="max-w-[360px]"
+            /> */}
+            <ClassesCarousel />
+          </div>
+        </div>
+      </section>
+      {/*<section className="home"></section>
+        <section className="classes"></section>
+        <section className="studio"></section>
+        <section className="events"></section>
+        <section className="rent"></section>
+        <section className="trainers"></section>
+        <section className="massage"></section>
+        <section className="contacts"></section>*/}
+    </>
   );
 }
