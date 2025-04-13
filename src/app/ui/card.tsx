@@ -25,10 +25,7 @@ export const ClassCard = ({
 }: ClassCardProps) => {
   return (
     <article
-      className={clsx(
-        "bg-[#EEE5DC] rounded-[20px] h-[492] flex-col h-full",
-        className
-      )}
+      className={clsx("bg-[#EEE5DC] rounded-[20px] h-[492] h-full", className)}
       {...props}
     >
       <div className=" rounded-[20px]">

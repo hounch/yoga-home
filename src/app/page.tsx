@@ -147,8 +147,8 @@ export default function Home() {
         </div>
       </section>
       <section className="classes">
-        <div className="container mr-auto ml-auto max-w-[1200px] pr-[20px] pl-[20px] pt-[88px]">
-          <div className="classes-content text-center text-[#494542]">
+        <div className="container mx-auto max-w-[1200px] px-5 pt-[88px]">
+          <div className="classes-content text-center text-[#494542] mb-[101px]">
             <h2 className="font-[400px] text-[42px]">
               Выбери одно или несколько
               <br />
@@ -173,6 +173,27 @@ export default function Home() {
               className="max-w-[360px]"
             /> */}
             <ClassesCarousel />
+          </div>
+          <div>
+            <Button
+              variant="solid"
+              className="flex h-[40px] w-[228px] justify-center items-center font-medium mt-[40px]"
+            >
+              Перейти к расписанию
+              <svg
+                className="ml-[14px]"
+                width="23"
+                height="7"
+                viewBox="0 0 23 7"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M22.2999 3.5587C22.4607 3.39792 22.4607 3.13724 22.2999 2.97646L19.6798 0.35635C19.519 0.195568 19.2583 0.195568 19.0976 0.35635C18.9368 0.517133 18.9368 0.777813 19.0976 0.938596L21.4265 3.26758L19.0976 5.59656C18.9368 5.75735 18.9368 6.01803 19.0976 6.17881C19.2583 6.33959 19.519 6.33959 19.6798 6.17881L22.2999 3.5587ZM-3.59928e-08 3.67929L22.0088 3.67929L22.0088 2.85587L3.59928e-08 2.85587L-3.59928e-08 3.67929Z"
+                  fill="#EEE5DC"
+                />
+              </svg>
+            </Button>
           </div>
         </div>
       </section>

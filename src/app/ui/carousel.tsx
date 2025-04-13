@@ -22,7 +22,7 @@ export function ClassesCarousel() {
       {/* Контейнер для прокрутки */}
       <div
         ref={scrollContainer}
-        className="flex gap-4 pb-4 overflow-x-auto scrollbar-hide snap-x snap-mandatory h-full"
+        className="flex gap-2 pb-4 overflow-x-auto scrollbar-hide snap-x snap-mandatory h-full"
       >
         {cards.map((card, index) => (
           <div
@@ -33,7 +33,7 @@ export function ClassesCarousel() {
               xl:w-[calc(33.33%-16px)] // Для десктопов
               h-full"
           >
-            <ClassCard {...card} className="h-full flex flex-col" />
+            <ClassCard {...card} className="h-full flex flex-col mx-auto" />
           </div>
         ))}
       </div>
