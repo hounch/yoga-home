@@ -21,12 +21,12 @@ export const Button = ({
         "rounded-[20.56px] font-medium text-[14px] tracking-[1%] transition-all",
         "content-center align-middle cursor-pointer",
         variant === "solid" && [
-          "bg-olivegreen-500 text-lightcream",
-          "hover:bg-olivegreen-600",
+          "bg-[#859974] text-[#EEE5DC]",
+          "hover:bg-[#859974]-600",
         ],
         variant === "outline" && [
           "border border-palebrown-500 text-palebrown-500",
-          "hover:bg-black/10", // используем стандартный черный с opacity
+          "hover:bg-black/10",
         ],
         className
       )}

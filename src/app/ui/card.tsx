@@ -25,7 +25,7 @@ export const ClassCard = ({
 }: ClassCardProps) => {
   return (
     <article
-      className={clsx("bg-[#EEE5DC] rounded-[20px] h-[492] h-full", className)}
+      className={clsx("bg-[#EEE5DC] rounded-[20px] h-full", className)}
       {...props}
     >
       <div className=" rounded-[20px]">
@@ -34,12 +34,15 @@ export const ClassCard = ({
           alt={title}
           width={373}
           height={191}
-          className="card-img"
+          className="card-img rounded-[20px] h-[191px] w-[373px] object-cover"
         />
       </div>
-      <h3 className="mt-[29px] text-[26px] text-[#494542]">{title}</h3>
+      <h3 className="ml-[20px] mt-[29px] text-[26px] text-[#494542]">
+        {title}
+      </h3>
+      {/* TODO Тернарный оператор */}
       <div className="flex items-center text-[#494542] text-[14px] font-medium mt-[24px] mb-[24px]">
-        <div className="flex justify-center items-center mr-[25px]">
+        <div className="flex justify-center items-center ml-[20px] mr-[25px]">
           <svg
             width="13"
             height="13"
@@ -107,7 +110,9 @@ export const ClassCard = ({
         </span>
       </div>
 
-      <p className="text-[#494542] text-[14px] w-[323px]">{description}</p>
+      <p className="text-[#494542] text-[14px] ml-[20px] w-[323px]">
+        {description}
+      </p>
     </article>
   );
 };
