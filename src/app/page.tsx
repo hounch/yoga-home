@@ -11,6 +11,8 @@ import Trainers from "./sections/trainers";
 import Health from "./sections/health";
 import Subscriptions from "./sections/subscriptions";
 import Sertificates from "./sections/sertificates";
+import Meditation from "./sections/meditation";
+import Footer from "./sections/footer";
 
 export default function Home() {
   return (
@@ -26,6 +28,8 @@ export default function Home() {
       <Health />
       <Subscriptions />
       <Sertificates />
+      <Meditation />
+      <Footer />
     </>
   );
 }
