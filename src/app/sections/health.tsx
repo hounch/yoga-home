@@ -6,8 +6,8 @@ export default function Health() {
   return (
     <>
       <section className="health">
-        <div className="container mx-auto w-[1200px] mt-[120px] flex justify-center">
-          <div className="content text-left mx-auto">
+        <div className="container w-[1200px] mt-[120px] flex content-between items-center mx-auto">
+          <div className="content text-left mr-[50px] ">
             <h2 className="font-[400px] text-[42px] leading-[48px] mb-[35px]">
               Доверьте здоровье вашего тела
               <br />
@@ -66,15 +66,13 @@ export default function Health() {
               </Button>
             </div>
           </div>
-          <div className="photo mx-auto">
-            <Image
-              src={"/group2.jpg"}
-              width={372}
-              height={404}
-              alt="group2"
-              className="rounded-[20px]"
-            ></Image>
-          </div>
+          <Image
+            src={"/group2.jpg"}
+            width={372}
+            height={404}
+            alt="group2"
+            className="rounded-[20px] h-[404px] w-[372px] object-cover"
+          ></Image>
         </div>
       </section>
       <section className="group-photo">
@@ -84,6 +82,7 @@ export default function Health() {
             height={579}
             width={1200}
             alt="group3"
+            className="h-[579px] object-cover"
           ></Image>
         </div>
       </section>

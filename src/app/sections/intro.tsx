@@ -7,14 +7,14 @@ export default function Intro() {
       <section className="intro">
         <div className="container mr-auto ml-auto max-w-[1200px] pr-[20px] pl-[20px] pt-[90px]">
           <div className="studio-content text-center text-[#494542]">
-            <h2 className="font-[400px] text-[42px]">
+            <h2 className="font-[400px] text-[42px] leading-[114%]">
               Йога хом — это дом здорового тела,
               <br />
               красоты и внутреннего роста, место
               <br />
               силы, где уютно, как дома
             </h2>
-            <p className="text-[22px] mt-[35px]">
+            <p className="text-[22px] mt-[35px] font-[400px] leading-[30px]">
               Уже 4 года мы помогаем вам обрести красивую осанку
               <br />и здоровую спину, познать себя и свой внутренний мир,
               <br />

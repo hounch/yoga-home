@@ -7,12 +7,12 @@ export default function Studio() {
       <section className="studio">
         <div className="container mx-auto max-w-[1200px] mt-[79px]">
           <div className="studio-content text-center text-[#494542]">
-            <h2 className="font-[400px] text-[42px]">
+            <h2 className="font-[400px] text-[42px] leading-[114%]">
               Йога проходит в уютном,
               <br />
               светлом пространстве студии
             </h2>
-            <p className="text-[22px] mt-[30px]">
+            <p className="text-[22px] mt-[30px] font-[400px] leading-[30px]">
               Здесь вы соединитесь с собой, выполняя дыхательные
               <br />и двигательные практики, получая истинное
               <br />

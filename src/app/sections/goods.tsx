@@ -6,24 +6,16 @@ export default function Goods() {
   return (
     <>
       <section className="goods">
-        <div className="container mx-auto max-w-[1200px]">
-          <div className="goods-content grid grid-cols-2 grid-rows-3 text-left text-[#494542]">
-            <h2 className="font-[400px] text-[42px]">
+        <div className="container flex mx-auto max-w-[1200px] mt-[100px]">
+          <div className="goods-content text-left text-[#494542]">
+            <h2 className="font-[400px] text-[42px] leading-[114%]">
               Вам не нужно ни о чем
               <br />
               беспокоиться, у нас есть все
               <br />
               что вам нужно
             </h2>
-            {/* TODO отступы для фото */}
-            <Image
-              src={"/studio9.jpg"}
-              width={401}
-              height={463}
-              alt="studio9"
-              className="row-span-3 ml-[112px] rounded-[20px] align-self"
-            ></Image>
-            <ul className="text-[22px] mt-[35px] w-[463px] row-span-2">
+            <ul className="text-[22px] mt-[35px] mr-[277px] w-[463px] font-[400px] leading-[50px]">
               <li className="border-b-[1px] pl-[20px] pt-[6px] h-[53px]">
                 Весь инвентарь для йоги
               </li>
@@ -44,9 +36,16 @@ export default function Goods() {
               </li>
             </ul>
           </div>
+          <Image
+            src={"/studio9.jpg"}
+            width={401}
+            height={463}
+            alt="studio9"
+            className="mt-[20px] rounded-[20px] object-cover h-[463px]"
+          ></Image>
         </div>
         <div className="container mx-auto max-w-[1200px] text-center text-[#494542] pt-[89px]">
-          <div className="content flex mb-[120px]">
+          <div className="content flex justify-center w-[1200px] mb-[120px]">
             <Image
               src={"/studio10.jpg"}
               width={562}
@@ -62,12 +61,12 @@ export default function Goods() {
               className="rounded-[20px]"
             ></Image>
           </div>
-          <h2 className="font-[400px] text-[42px]">
+          <h2 className="font-[400px] text-[42px] leading-[114%]">
             Открывайте новое для себя
             <br />
             на мероприятиях в Йога Хом
           </h2>
-          <p className="text-[22px] mt-[35px]">
+          <p className="text-[22px] mt-[35px] font-[400px] leading-[30px]">
             Йога Хом — это небольшая семья, и мы часто
             <br />
             устраиваем мероприятия в студии и на открытом

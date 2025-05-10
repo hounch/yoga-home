@@ -11,7 +11,7 @@ export default function Rent() {
 
           <div className="rent-content text-[#494542] flex mt-[93px] justify-center items-center">
             <div className="w-[562px] pt-[32px]">
-              <h2 className="font-[400px] text-[42px] leading-[48px]">
+              <h2 className="font-[400px] text-[42px] leading-[114%]">
                 Вы можете арендовать
                 <br />
                 100м2 нашей уютной
@@ -45,7 +45,7 @@ export default function Rent() {
               </Button>
             </div>
             <div className="w-[534px] h-[397] bg-[#859974] ml-[46px] text-[#EEE5DC] pt-[32px] pl-[40px] rounded-[20px]">
-              <h2 className="font-[400px] text-[42px] leading-[48px]">
+              <h2 className="font-[400px] text-[42px] leading-[114%]">
                 В вашем
                 <br />
                 распоряжении будут:

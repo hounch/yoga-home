@@ -9,12 +9,12 @@ export default function Classes() {
       <section className="classes">
         <div className="container mx-auto max-w-[1200px] px-5 pt-[88px]">
           <div className="classes-content text-center text-[#494542] mb-[101px]">
-            <h2 className="font-[400px] text-[42px]">
+            <h2 className="font-[400px] text-[42px] leading-[114%]">
               Выбери одно или несколько
               <br />
               направлений йоги себе по душе
             </h2>
-            <p className="text-[22px] mt-[35px]">
+            <p className="text-[22px] mt-[35px] font-[400px] leading-[30px]">
               Соединитесь со своим телом и душой, войдя
               <br />в состояние умиротворения и спокойствия с помощью
               <br />
@@ -24,7 +24,7 @@ export default function Classes() {
           <div className="carousel flex justify-evenly">
             <Carousel type="Card1" />
           </div>
-          <div className="flex">
+          <div className="flex items-center">
             <Button
               variant="solid"
               className="flex h-[40px] w-[228px] justify-center items-center font-medium mt-[40px] mr-[40px]"

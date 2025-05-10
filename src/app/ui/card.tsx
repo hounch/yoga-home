@@ -68,7 +68,9 @@ export default function Card({ type, data }: CardProps) {
         {/* Контент для разных типов карточек */}
         <div className="p-4 flex flex-col flex-grow text-left">
           {data.title && (
-            <h3 className="text-[26px] text-[#494542] mb-3">{data.title}</h3>
+            <h3 className="text-[26px] text-[#494542] mb-3 font-[400px] leading-[30px]">
+              {data.title}
+            </h3>
           )}
 
           {/* Блок мета-данных для Card1 */}
@@ -110,14 +112,16 @@ export default function Card({ type, data }: CardProps) {
 
           {/* Описание для Card1 и Card4 */}
           {data.description && (
-            <p className="text-[#494542] text-[14px]">{data.description}</p>
+            <p className="text-[#494542] text-[14px] font-[500px] leading-[150%]">
+              {data.description}
+            </p>
           )}
 
           {/* Специфичный контент для Card5 */}
           {type === "Card5" && data.cost && (
             <>
               <div className="bg-[#859974] mt-[90px] w-[369px] h-[250px] rounded-[20px] text-[#EEE5DC] absolute">
-                <div className="text-[32px] text-left leading-[130%] w-[314px] mx-auto mt-[30px]">
+                <div className="text-[32px] font-[400] leading-[130%] text-left w-[314px] mx-auto mt-[30px]">
                   <p>{data.name} </p>
                 </div>
                 <div className="flex justify-between items-end w-[314px] ml-[30px] mb-[21px] mt-auto absolute bottom-0">

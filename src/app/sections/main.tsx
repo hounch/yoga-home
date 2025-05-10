@@ -6,9 +6,9 @@ import Image from "next/image";
 export default function Main() {
   return (
     <>
-      <header>
-        <div className="container mr-auto ml-auto pr-[20px] pl-[20px] max-w-[1200px]">
-          <div className="header-content flex justify-between items-center h-[83]">
+      <header className="fixed top-0 left-0 right-0 w-full z-50 bg-[#EEE5DC]">
+        <div className="container mx-auto px-[20px] max-w-[1200px]">
+          <div className="header-content flex justify-between items-center h-[94px]">
             <Image
               className="header-content_logo"
               src="/logo.png"
@@ -21,11 +21,11 @@ export default function Main() {
           </div>
         </div>
       </header>
-      <main className="relative rounded-[20px]">
+      <main className="relative rounded-[20px] pt-[94px]">
         {/* h-[273] */}
-        <div className="container mt-[31px] mr-auto ml-auto pr-[20px] pl-[20px] max-w-[1200px]">
+        <div className="container mr-auto ml-auto pr-[20px] pl-[20px] max-w-[1200px]">
           <div className="main-content">
-            <h2 className="font-[400px] text-[42px]">
+            <h2 className="font-[400px] text-[42px] leading-[114%]">
               Добро пожаловать в Йога Хом,
               <br /> место силы и спокойствия
             </h2>
