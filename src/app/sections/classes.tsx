@@ -21,10 +21,10 @@ export default function Classes() {
               авторских техник преподавателей нашей студии
             </p>
           </div>
-          <div className="carousel flex justify-evenly">
+          <div className="carousel">
             <Carousel type="Card1" />
           </div>
-          <div className="flex items-center">
+          <div className="flex">
             <Button
               variant="solid"
               className="flex h-[40px] w-[228px] justify-center items-center font-medium mt-[40px] mr-[40px]"

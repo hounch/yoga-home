@@ -20,9 +20,9 @@ export default function Subscriptions() {
           <h2 className="font-[400px] text-[42px] leading-[48px]">
             Месячные абонементы Йога Хом
           </h2>
-          <div className="one-tine-subscription-content">
-            <Carousel type="Card6" />
-          </div>
+        </div>
+        <div className="monthly-subscription-content mx-auto text-center">
+          <Carousel type="Card6" />
         </div>
       </section>
     </>

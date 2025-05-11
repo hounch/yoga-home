@@ -62,7 +62,7 @@ export function Carousel({ type }: CarouselProps) {
     <div className="relative group">
       <div
         ref={scrollContainer}
-        className="flex gap-4 pb-4 overflow-x-auto snap-x snap-mandatory scrollbar-hide"
+        className="flex gap-4 pb-4 overflow-x-hidden overflow-y-auto snap-x snap-mandatory scrollbar-hide"
       >
         {getData().map((item, index) => (
           <div

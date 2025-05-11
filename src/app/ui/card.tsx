@@ -118,32 +118,28 @@ export default function Card({ type, data }: CardProps) {
           )}
 
           {/* Специфичный контент для Card5 */}
-          {type === "Card5" && data.cost && (
-            <>
-              <div className="bg-[#859974] mt-[90px] w-[369px] h-[250px] rounded-[20px] text-[#EEE5DC] absolute">
-                <div className="text-[32px] font-[400] leading-[130%] text-left w-[314px] mx-auto mt-[30px]">
-                  <p>{data.name} </p>
-                </div>
-                <div className="flex justify-between items-end w-[314px] ml-[30px] mb-[21px] mt-auto absolute bottom-0">
-                  <p className="text-2xl font-bold">{data.cost}</p>
-                  <LogoIcon />
-                </div>
+          {type === "Card5" && (
+            <div className="bg-[#859974] mt-[90px] w-[369px] h-[250px] rounded-[20px] text-[#EEE5DC] absolute">
+              <div className="text-[32px] font-[400] leading-[130%] text-left w-[314px] mx-auto mt-[30px]">
+                <p>{data.name} </p>
               </div>
-            </>
+              <div className="flex justify-between items-end w-[314px] ml-[30px] mb-[21px] mt-auto absolute bottom-0">
+                <p className="text-2xl font-bold">{data.cost}</p>
+                <LogoIcon />
+              </div>
+            </div>
           )}
           {/* Специфичный контент для Card6 */}
-          {type === "Card6" && data.cost && (
-            <>
-              <div className="bg-[#859974] mt-[90px] w-[369px] h-[250px] rounded-[20px] text-[#EEE5DC] absolute">
-                <div className="text-[32px] text-left leading-[130%] w-[314px] mx-auto mt-[30px]">
-                  <p>{data.name} </p>
-                </div>
-                <div className="flex justify-between items-end w-[314px] ml-[30px] mb-[21px] mt-auto absolute bottom-0">
-                  <p className="text-2xl font-bold">{data.cost}</p>
-                  <LogoIcon />
-                </div>
+          {type === "Card6" && (
+            <div className="bg-[#859974] mt-[90px] w-[369px] h-[250px] rounded-[20px] text-[#EEE5DC] relative">
+              <div className="text-[32px] text-left leading-[130%] w-[314px] mx-auto mt-[30px]">
+                <p>{data.name} </p>
               </div>
-            </>
+              <div className="flex justify-between items-end w-[314px] ml-[30px] mb-[21px] mt-auto absolute bottom-0">
+                <p className="text-2xl font-bold">{data.cost}</p>
+                <LogoIcon />
+              </div>
+            </div>
           )}
         </div>
       </article>
