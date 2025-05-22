@@ -5,9 +5,9 @@ import Image from "next/image";
 export default function Footer() {
   return (
     <>
-      <section className="footer">
-        <div className="container mt-[930px] pt-[125px] mx-auto max-w-[1200px] h-[732px] text-center text-[#EEE5DC] bg-[#859974]">
-          <h2 className="font-[400px] text-[42px] leading-[48px]">
+      <section className="footer pt-12 md:pt-[125px]">
+        <div className="container mx-auto px-4 md:px-0 max-w-[1200px]">
+          <h2 className="text-2xl md:text-[42px]">
             Присоединяйтесь к нам <br />и следите за обновлениями <br />
             Йога Хом в социальных сетях
           </h2>
@@ -16,7 +16,7 @@ export default function Footer() {
             <br />
             ул. Северная 528А, 2 этаж
           </p>
-          <div className="icons flex justify-center mt-[35px]">
+          <div className="icons flex flex-wrap justify-center gap-4 mt-6">
             <svg
               className="mr-[23px]"
               width="51"

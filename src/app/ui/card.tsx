@@ -22,6 +22,8 @@ type CardProps = {
 
 export default function Card({ type, data }: CardProps) {
   const getImageSize = () => {
+  if (typeof window !== 'undefined' && window.innerWidth < 768) {
+    return { width: 300, height: 150 };
     switch (type) {
       case "Card1":
         return { width: 373, height: 191 };
@@ -68,7 +70,7 @@ export default function Card({ type, data }: CardProps) {
         {/* Контент для разных типов карточек */}
         <div className="p-4 flex flex-col flex-grow text-left">
           {data.title && (
-            <h3 className="text-[26px] text-[#494542] mb-3 font-[400px] leading-[30px]">
+            <h3 className="text-xl md:text-[26px] mb-2 md:mb-3">
               {data.title}
             </h3>
           )}

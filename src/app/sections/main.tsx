@@ -21,19 +21,15 @@ export default function Main() {
           </div>
         </div>
       </header>
-      <main className="relative rounded-[20px] pt-[94px]">
-        {/* h-[273] */}
-        <div className="container mr-auto ml-auto pr-[20px] pl-[20px] max-w-[1200px]">
+      <main className="relative rounded-[20px] pt-[94px] md:pt-[120px]">
+        <div className="container mx-auto px-4 md:px-[20px] max-w-[1200px]">
           <div className="main-content">
-            <h2 className="font-[400px] text-[42px] leading-[114%]">
+            <h2 className="text-3xl md:text-[42px] leading-[114%]">
               Добро пожаловать в Йога Хом,
               <br /> место силы и спокойствия
             </h2>
-            <div className="flex mt-[40px] mb-[61px]">
-              <Button
-                variant="solid"
-                className="flex h-[40px] w-[211px] pr-[0] justify-center items-center font-medium mr-[32px]"
-              >
+            <div className="flex flex-col md:flex-row gap-4 mt-[40px] mb-[61px]">
+              <Button variant="solid" className="w-full md:w-[211px]">
                 Записаться на йогу
                 <svg
                   className="ml-[14px]"
@@ -49,10 +45,7 @@ export default function Main() {
                   />
                 </svg>
               </Button>
-              <Button
-                variant="outline"
-                className=" flex h-[40px] w-[228px] justify-center items-center font-medium"
-              >
+              <Button variant="outline" className="w-full md:w-[228px]">
                 Проконсультироваться
                 <svg
                   className="ml-[10px]"
@@ -75,7 +68,8 @@ export default function Main() {
                 alt="group"
                 width={1200}
                 height={511}
-              ></Image>
+                layout="responsive"
+              />
             </div>
           </div>
         </div>

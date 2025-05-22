@@ -1,20 +1,19 @@
 "use client";
-import Image from "next/image";
 import { Button } from "../ui/button";
 import { Carousel } from "../ui/carousel";
 
 export default function Classes() {
   return (
     <>
-      <section className="classes">
-        <div className="container mx-auto max-w-[1200px] px-5 pt-[88px]">
-          <div className="classes-content text-center text-[#494542] mb-[101px]">
-            <h2 className="font-[400px] text-[42px] leading-[114%]">
+      <section className="classes py-12 md:pt-[88px]">
+        <div className="container mx-auto px-4 md:px-5 max-w-[1200px]">
+          <div className="text-center mb-8 md:mb-[101px]">
+            <h2 className="text-2xl md:text-[42px]">
               Выбери одно или несколько
               <br />
               направлений йоги себе по душе
             </h2>
-            <p className="text-[22px] mt-[35px] font-[400px] leading-[30px]">
+            <p className="mt-4 md:mt-[35px] text-lg md:text-[22px]">
               Соединитесь со своим телом и душой, войдя
               <br />в состояние умиротворения и спокойствия с помощью
               <br />
@@ -24,11 +23,8 @@ export default function Classes() {
           <div className="carousel">
             <Carousel type="Card1" />
           </div>
-          <div className="flex">
-            <Button
-              variant="solid"
-              className="flex h-[40px] w-[228px] justify-center items-center font-medium mt-[40px] mr-[40px]"
-            >
+          <div className="flex flex-col md:flex-row gap-4 mt-8 md:mt-[40px]">
+            <Button variant="solid" className="w-full md:w-[228px]">
               Перейти к расписанию
               <svg
                 className="ml-[14px]"
@@ -44,10 +40,7 @@ export default function Classes() {
                 />
               </svg>
             </Button>
-            <Button
-              variant="outline"
-              className="flex h-[40px] w-[228px] justify-center items-center font-medium mt-[40px]"
-            >
+            <Button variant="outline" className="w-full md:w-[228px]">
               Наши абонементы
               <svg
                 className="ml-[14px]"
