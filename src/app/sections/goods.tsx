@@ -41,7 +41,8 @@ export default function Goods() {
             width={401}
             height={463}
             alt="studio9"
-            className="mt-[20px] rounded-[20px] object-cover h-[463px]"
+            className="mt-4 w-full h-auto max-w-[400px] rounded-lg"
+            sizes="(max-width: 640px) 90vw, 400px"
           ></Image>
         </div>
         <div className="container mx-auto max-w-[1200px] text-center text-[#494542] pt-[89px]">

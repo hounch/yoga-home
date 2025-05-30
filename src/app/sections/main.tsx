@@ -7,7 +7,7 @@ export default function Main() {
   return (
     <>
       <header className="fixed top-0 left-0 right-0 w-full z-50 bg-[#EEE5DC]">
-        <div className="container mx-auto px-[20px] max-w-[1200px]">
+        <div className="container mx-auto px-[20px]">
           <div className="header-content flex justify-between items-center h-[94px]">
             <Image
               className="header-content_logo"
@@ -21,15 +21,19 @@ export default function Main() {
           </div>
         </div>
       </header>
-      <main className="relative rounded-[20px] pt-[94px] md:pt-[120px]">
-        <div className="container mx-auto px-4 md:px-[20px] max-w-[1200px]">
+      <main className="main-page relative rounded-[20px] pt-[6.7rem] md:pt-[8.57rem]">
+        <div className="container mx-auto px-4 md:px-[20px]">
           <div className="main-content">
-            <h2 className="text-3xl md:text-[42px] leading-[114%]">
-              Добро пожаловать в Йога Хом,
-              <br /> место силы и спокойствия
-            </h2>
-            <div className="flex flex-col md:flex-row gap-4 mt-[40px] mb-[61px]">
-              <Button variant="solid" className="w-full md:w-[211px]">
+            <div className="main-text">
+              <h2 className="text-3rem sm:text-3xl md:text-[42px] leading-tight">
+                Добро пожаловать в Йога Хом, место силы и спокойствия
+              </h2>
+            </div>
+            <div className="main-buttons flex flex-col md:flex-row gap-4 mt-[40px] mb-[61px]">
+              <Button
+                variant="solid"
+                className="main-button1 flex justify-center items-center w-full h-[2.85rem] md:w-[211px]"
+              >
                 Записаться на йогу
                 <svg
                   className="ml-[14px]"
@@ -45,7 +49,10 @@ export default function Main() {
                   />
                 </svg>
               </Button>
-              <Button variant="outline" className="w-full md:w-[228px]">
+              <Button
+                variant="outline"
+                className="main-button2 flex justify-center items-center w-full md:w-[228px]"
+              >
                 Проконсультироваться
                 <svg
                   className="ml-[10px]"
@@ -62,7 +69,7 @@ export default function Main() {
                 </svg>
               </Button>
             </div>
-            <div className="relative z-0">
+            <div className="relative main-img">
               <Image
                 src="/main.jpg"
                 alt="group"

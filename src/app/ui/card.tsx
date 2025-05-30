@@ -22,22 +22,19 @@ type CardProps = {
 
 export default function Card({ type, data }: CardProps) {
   const getImageSize = () => {
-  if (typeof window !== 'undefined' && window.innerWidth < 768) {
-    return { width: 300, height: 150 };
     switch (type) {
       case "Card1":
         return { width: 373, height: 191 };
       case "Card2":
         return { width: 500, height: 300 };
       case "Card3":
-        return { width: 266, height: 358 };
+        return { width: 468, height: 312 };
       case "Card4":
-        return { width: 368, height: 212 };
+        return { width: 266, height: 358 };
       default:
         return { width: 300, height: 200 };
     }
   };
-
   return (
     <div className={`${data.className || ""} h-full`}>
       <article className="bg-[#EEE5DC] rounded-[20px] h-full flex flex-col">
@@ -50,11 +47,11 @@ export default function Card({ type, data }: CardProps) {
               {...getImageSize()}
               className={`w-full object-cover ${
                 type === "Card1"
-                  ? "h-[191px]"
+                  ? "h-[191px] w-[373px]"
                   : type === "Card2"
                   ? "h-[300px]"
                   : type === "Card3"
-                  ? "h-[358px] w-[266px]"
+                  ? "w-[266px] h-[358px]"
                   : type === "Card4"
                   ? "h-[212px] w-[268px]"
                   : type === "Card5"

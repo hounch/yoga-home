@@ -18,7 +18,7 @@ export const Button = ({
   return (
     <button
       className={clsx(
-        "rounded-[20.56px] font-medium text-[14px] tracking-[1%] transition-all",
+        "rounded-[1.4rem] font-medium text-[14px] tracking-[1%] transition-all h-[2.85rem] flex justify-center items-center",
         "content-center align-middle cursor-pointer",
         variant === "solid" && [
           "bg-[#859974] text-[#EEE5DC]",

@@ -42,27 +42,27 @@ export function Carousel({ type }: CarouselProps) {
   const getCardWidth = () => {
     switch (type) {
       case "Card1":
-        return "w-[360px]";
+        return "w-[373px]";
       case "Card2":
-        return "w-[500px]";
+        return "w-[90vw] sm:w-[360px]";
       case "Card3":
-        return "w-[266px]";
+        return "w-[266px] sm:w-[360px]";
       case "Card4":
-        return "w-[368px]";
+        return "w-[266px] sm:w-[360px]";
       case "Card5":
-        return "w-[369px]";
+        return "w-[90vw] sm:w-[360px]";
       case "Card6":
-        return "w-[369px]";
+        return "w-[90vw] sm:w-[360px]";
       default:
-        return "w-[300px]";
+        return "w-[90vw] sm:w-[360px]";
     }
   };
 
   return (
-    <div className="relative group">
+    <div className="relative group px-4">
       <div
         ref={scrollContainer}
-        className="flex gap-4 pb-4 overflow-x-hidden overflow-y-auto snap-x snap-mandatory scrollbar-hide"
+        className="flex gap-4 pb-4 overflow-x-auto snap-x scroll-smooth"
       >
         {getData().map((item, index) => (
           <div

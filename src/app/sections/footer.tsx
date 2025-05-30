@@ -5,13 +5,13 @@ import Image from "next/image";
 export default function Footer() {
   return (
     <>
-      <section className="footer pt-12 md:pt-[125px]">
-        <div className="container mx-auto px-4 md:px-0 max-w-[1200px]">
-          <h2 className="text-2xl md:text-[42px]">
+      <section className="bg-[#859974] footer mt-[66rem] mx-auto pt-[11rem] h-[54.1rem] w-[1200px] rounded-[20px]">
+        <div className="container mx-auto px-4 max-w-[1200px]">
+          <h2 className="text-3rem sm:text-3xl md:text-[42px] leading-tight text-[#EEE5DC] text-center">
             Присоединяйтесь к нам <br />и следите за обновлениями <br />
             Йога Хом в социальных сетях
           </h2>
-          <p className="text-[22px] mt-[35px]">
+          <p className="text-[22px] mt-[35px] text-[#EEE5DC] text-center">
             Ждем вас на ковриках по адресу
             <br />
             ул. Северная 528А, 2 этаж

@@ -9,6 +9,10 @@
   box-sizing: border-box;
 }
 
+.container {
+  @apply px-4 mx-auto max-w-[1200px];
+}
+
 /* Стили для карусели */
 .scrollbar-hide {
   -ms-overflow-style: none;
@@ -27,10 +31,24 @@
   scroll-snap-align: start;
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 1200px) {
   .container {
-    max-width: 100%;
+    max-width: 1200px;
     padding: 0 20px;
+  }
+
+  .studio-content .mobile-show {
+    display: none;
+  }
+
+  .studio-content .desktop-show {
+    display: inline;
+  }
+}
+
+@media (max-width: 992px) {
+  :root {
+    font-size: 18px;
   }
 }
 
@@ -52,7 +70,72 @@
 
 @media (max-width: 640px) {
   h2 {
-    font-size: 24px !important;
+    font-size: 32px;
+  }
+
+  button {
+    font-size: 15.92px !important;
+  }
+
+  :root {
+    font-size: 18px;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .header-content {
+    width: 26rem;
+  }
+
+  .navbar-toggler {
+    visibility: visible;
+  }
+
+  .main-page {
+    padding-top: 7.2rem;
+    margin-bottom: 3.3rem;
+    background-image: linear-gradient(#eee5dc 10%, transparent),
+      url("../../public/main0.jpg");
+    background-size: cover;
+    height: 45rem;
+    border-radius: 0;
+  }
+
+  .header-content_last {
+    display: none;
+  }
+
+  .main-buttons {
+    margin-top: 22.5rem;
+  }
+
+  .main-button1 {
+    width: 12.5rem;
+  }
+
+  .main-button2 {
+    width: 14.3rem;
+  }
+
+  .main-img {
+    display: none;
+  }
+
+  .studio-content {
+    text-align: left;
+  }
+
+  .studio-content > p {
+    font-size: 1rem;
+  }
+
+  .studio-content .desktop-show {
+    display: none;
+  }
+  .studio-content .mobile-show {
+    display: inline;
   }
 
   .flex-col-mobile {
@@ -61,5 +144,23 @@
 
   .w-full-mobile {
     width: 100% !important;
+  }
+
+  .carousel-item {
+    width: 85vw !important;
+    min-width: 300px;
+    margin-right: 12px;
+  }
+
+  .text-overflow-ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 90vw;
+  }
+
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
