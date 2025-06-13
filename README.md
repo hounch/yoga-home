@@ -2,9 +2,41 @@
 
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+## Features
+
+### 🧘‍♀️ Yoga Studio Website
+- Modern responsive design
+- Interactive carousels for different content types
+- Trainer profiles and class information
+
+### 📝 Content Management System (CMS)
+- **YAML-based content management** for easy editing
+- **Admin panel** at `/admin` powered by Decap CMS
+- **API endpoints** for dynamic content loading
+
+#### Content Structure
+```
+content/
+├── trainers/          # Trainer profiles
+├── single-classes/    # Individual class offerings  
+├── subscriptions/     # Membership plans
+```
+
+#### Admin Panel
+Access the admin interface at `/admin` to manage:
+- 👥 **Тренеры** - Trainer profiles with photos and descriptions
+- 🏃‍♀️ **Разовые занятия** - Individual classes and pricing
+- 💳 **Абонементы** - Subscription plans and packages
+
 ## Getting Started
 
-First, run the development server:
+First, install dependencies:
+
+```bash
+npm install
+```
+
+Then, run the development server:
 
 ```bash
 npm run dev
@@ -18,9 +50,28 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Admin Panel Access
+Visit [http://localhost:3000/admin](http://localhost:3000/admin) to access the content management interface.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Project Structure
+
+```
+src/
+├── app/
+│   ├── admin/         # CMS admin panel
+│   ├── api/           # API endpoints for YAML content
+│   ├── constants/     # Static data constants
+│   └── ui/            # UI components
+├── lib/
+│   └── content.ts     # YAML content reading utilities
+└── content/           # YAML content files
+```
+
+## API Endpoints
+
+- `GET /api/trainers` - Fetch trainer data
+- `GET /api/single-classes` - Fetch class information  
+- `GET /api/subscriptions` - Fetch subscription plans
 
 ## Learn More
 
