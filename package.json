@@ -10,6 +10,10 @@
   },
   "dependencies": {
     "clsx": "^2.1.1",
+    "decap-cms-app": "^3.6.4",
+    "gray-matter": "^4.0.3",
+    "js-yaml": "^4.1.0",
+    "netlify-identity-widget": "^1.9.2",
     "next": "15.2.4",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
