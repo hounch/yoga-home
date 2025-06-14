@@ -12,9 +12,10 @@ type CarouselType = "Card1" | "Card2" | "Card3" | "Card4" | "Card5" | "Card6";
 
 type CarouselProps = {
 	type: CarouselType;
+	data?: CardData[]; // Опциональные данные, переданные через props
 };
 
-export function Carousel({ type }: CarouselProps) {
+export function Carousel({ type, data }: CarouselProps) {
 	const scrollContainer = useRef<HTMLDivElement>(null);
 	const [cardData4, setCardData4] = useState<CardData[]>([]);
 	const [cardData5, setCardData5] = useState<CardData[]>([]);
@@ -22,8 +23,8 @@ export function Carousel({ type }: CarouselProps) {
 	const [loading, setLoading] = useState(false);
 
 	useEffect(() => {
-		// Загружаем данные из YAML через API только для CardData4-6
-		if (type === "Card4" || type === "Card5" || type === "Card6") {
+		// Загружаем данные из API только если данные не переданы через props
+		if ((type === "Card4" || type === "Card5" || type === "Card6") && !data) {
 			setLoading(true);
 
 			const fetchData = async () => {
@@ -50,9 +51,14 @@ export function Carousel({ type }: CarouselProps) {
 
 			fetchData();
 		}
-	}, [type]);
+	}, [type, data]);
 
 	const getData = (): CardData[] => {
+		// Если данные переданы через props, используем их
+		if (data) {
+			return data;
+		}
+
 		switch (type) {
 			case "Card1":
 				return CardData1;
@@ -90,7 +96,7 @@ export function Carousel({ type }: CarouselProps) {
 		}
 	};
 
-	if (loading && (type === "Card4" || type === "Card5" || type === "Card6")) {
+	if (loading && (type === "Card4" || type === "Card5" || type === "Card6") && !data) {
 		return (
 			<div className="relative group px-4">
 				<div className="flex gap-4 pb-4">

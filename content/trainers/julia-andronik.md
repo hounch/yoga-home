@@ -1,6 +1,6 @@
 ---
 name: "Юлия Андроник"
-image: "/julia.jpg"
+image: "/uploads/test-image.jpg"
 order: 1
 ---
 

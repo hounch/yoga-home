@@ -29,7 +29,21 @@ function getContentData(folder: string) {
 	return allData.sort((a: any, b: any) => a.order - b.order);
 }
 
-// Функции для получения данных из YAML
+// Универсальная функция для получения данных секций
+export function getSectionData(name: string) {
+	switch (name) {
+		case 'trainers':
+			return getContentData('trainers');
+		case 'single-classes':
+			return getContentData('single-classes');
+		case 'subscriptions':
+			return getContentData('subscriptions');
+		default:
+			throw new Error(`Unknown section: ${name}`);
+	}
+}
+
+// Функции для получения данных из YAML (сохраняем для обратной совместимости)
 export function getCardData4() {
 	return getContentData('trainers');
 }

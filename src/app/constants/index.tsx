@@ -157,6 +157,3 @@ export const CardData3 = [
 		imageSrc: "/event9.jpg",
 	},
 ];
-
-// CardData4-6 теперь загружаются из YAML файлов через серверные функции
-// Используйте getCardData4(), getCardData5(), getCardData6() из src/lib/content.ts

@@ -1,5 +1,4 @@
-"use client";
-
+import { getSectionData } from "@/lib/content";
 import Main from "./sections/main";
 import Intro from "./sections/intro";
 import Classes from "./sections/classes";
@@ -14,22 +13,30 @@ import Sertificates from "./sections/sertificates";
 import Meditation from "./sections/meditation";
 import Footer from "./sections/footer";
 
-export default function Home() {
-  return (
-    <>
-      <Main />
-      <Intro />
-      <Classes />
-      <Studio />
-      <Goods />
-      <Rent />
-      <GroupPhoto />
-      <Trainers />
-      <Health />
-      <Subscriptions />
-      <Sertificates />
-      <Meditation />
-      <Footer />
-    </>
-  );
+export default async function Home() {
+	// Загружаем данные на сервере
+	const trainersData = getSectionData('trainers');
+	const singleClassesData = getSectionData('single-classes');
+	const subscriptionsData = getSectionData('subscriptions');
+
+	return (
+		<>
+			<Main />
+			<Intro />
+			<Classes />
+			<Studio />
+			<Goods />
+			<Rent />
+			<GroupPhoto />
+			<Trainers data={trainersData} />
+			<Health />
+			<Subscriptions
+				singleClassesData={singleClassesData}
+				subscriptionsData={subscriptionsData}
+			/>
+			<Sertificates />
+			<Meditation />
+			<Footer />
+		</>
+	);
 }

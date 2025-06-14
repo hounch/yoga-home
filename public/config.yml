@@ -1,0 +1,44 @@
+backend:
+  name: git-gateway
+  branch: feature
+
+local_backend: true
+
+media_folder: "public/uploads"
+public_folder: "/uploads"
+
+collections:
+  - name: "trainers"
+    label: "Тренеры"
+    folder: "content/trainers"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Имя", name: "name", widget: "string"}
+      - {label: "Фото", name: "image", widget: "image"}
+      - {label: "Порядок", name: "order", widget: "number", default: 1}
+      - {label: "Описание", name: "body", widget: "markdown"}
+
+  - name: "single-classes"
+    label: "Разовые занятия"
+    folder: "content/single-classes"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Название", name: "name", widget: "string"}
+      - {label: "Фото", name: "image", widget: "image"}
+      - {label: "Цена", name: "cost", widget: "string"}
+      - {label: "Порядок", name: "order", widget: "number", default: 1}
+      - {label: "Описание", name: "body", widget: "markdown"}
+
+  - name: "subscriptions"
+    label: "Абонементы"
+    folder: "content/subscriptions"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Название", name: "name", widget: "string"}
+      - {label: "Фото", name: "image", widget: "image"}
+      - {label: "Цена", name: "cost", widget: "string"}
+      - {label: "Порядок", name: "order", widget: "number", default: 1}
+      - {label: "Описание", name: "body", widget: "markdown"} 
