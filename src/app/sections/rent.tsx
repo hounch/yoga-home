@@ -5,19 +5,19 @@ import { Carousel } from "../ui/carousel";
 export default function Rent() {
   return (
     <>
-      <section className="rent">
-        <div className="container mx-auto max-w-[1200px] mt-[123px]">
+      <section className="rent" id="rent">
+        <div className="container mx-auto max-w-full mt-[123px]">
           <Carousel type="Card3" />
 
-          <div className="rent-content text-[#494542] flex mt-[93px] justify-center items-center">
-            <div className="w-[562px] pt-[32px]">
+          <div className="rent-content text-[#494542] flex md:flex-row flex-col mt-[93px] justify-center items-center">
+            <div className="md:w-[562px] w-full pt-[32px]">
               <h2 className="font-[400px] text-[42px] leading-[114%]">
                 Вы можете арендовать
                 <br />
                 100м2 нашей уютной
                 <br />и светлой студии
               </h2>
-              <p className="text-[22px] ml-[22px] mt-[35px] mb-[40px] leading-[30px]">
+              <p className="text-[22px] md:ml-[22px] mt-[35px] mb-[40px] leading-[30px]">
                 Помещение можно арендовать для йоги,
                 <br />
                 танцев, фитнеса, практик, девичников,
@@ -26,7 +26,7 @@ export default function Rent() {
               </p>
               <Button
                 variant="outline"
-                className="flex h-[40px] w-[208px] justify-center items-center font-medium"
+                className="flex h-[40px] w-[16.36rem] justify-center items-center font-medium mb-[4.29rem]"
               >
                 Арендовать студию
                 <svg
@@ -44,7 +44,7 @@ export default function Rent() {
                 </svg>
               </Button>
             </div>
-            <div className="w-[534px] h-[397] bg-[#859974] ml-[46px] text-[#EEE5DC] pt-[32px] pl-[40px] rounded-[20px]">
+            <div className="mb:w-[534px] lg:w-[534px] w-full h-[397] bg-[#859974] md:ml-[46px] mx-auto text-[#EEE5DC] pt-[32px] pl-[40px] rounded-[20px]">
               <h2 className="font-[400px] text-[42px] leading-[114%]">
                 В вашем
                 <br />
@@ -58,7 +58,8 @@ export default function Rent() {
                 </li>
                 <li>
                   Оборудование для практик: коврики, гамаки, блоки, ремни,
-                  гантели, блостеры
+                  гантели, <br className="md:hidden lg:hidden" />
+                  блостеры
                 </li>
               </ul>
             </div>

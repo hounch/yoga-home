@@ -15,6 +15,9 @@ module.exports = {
         transparent: "transparent",
         current: "currentColor",
       },
+      screens: {
+        mobile: "400px",
+      },
     },
   },
   plugins: [],

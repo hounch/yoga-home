@@ -13,7 +13,15 @@ export type CardData = {
   className?: string;
 };
 
-type CardType = "Card1" | "Card2" | "Card3" | "Card4" | "Card5" | "Card6";
+type CardType =
+  | "Card1"
+  | "Card2"
+  | "Card3"
+  | "Card4"
+  | "Card5"
+  | "Card6"
+  | "Card7"
+  | "Card8";
 
 type CardProps = {
   type: CardType;
@@ -31,6 +39,14 @@ export default function Card({ type, data }: CardProps) {
         return { width: 468, height: 312 };
       case "Card4":
         return { width: 266, height: 358 };
+      case "Card5":
+        return { width: 231, height: 163 };
+      case "Card6":
+        return { width: 231, height: 163 };
+      case "Card7":
+        return { width: 295, height: 197 };
+      case "card8":
+        return { width: 350, height: 259 };
       default:
         return { width: 300, height: 200 };
     }
@@ -45,7 +61,7 @@ export default function Card({ type, data }: CardProps) {
               src={data.imageSrc}
               alt={data.title || "Изображение"}
               {...getImageSize()}
-              className={`w-full object-cover ${
+              className={`w-full object-cover object-center ${
                 type === "Card1"
                   ? "h-[191px] w-[373px]"
                   : type === "Card2"
@@ -58,6 +74,8 @@ export default function Card({ type, data }: CardProps) {
                   ? "w-[369px] h-[250px]"
                   : type === "Card6"
                   ? "w-[369px] h-[250px]"
+                  : type === "Card8"
+                  ? "w-[350px] h-[259px] rounded-[5.47px]"
                   : "h-[500px]"
               }`}
             />
@@ -118,7 +136,7 @@ export default function Card({ type, data }: CardProps) {
 
           {/* Специфичный контент для Card5 */}
           {type === "Card5" && (
-            <div className="bg-[#859974] mt-[90px] w-[369px] h-[250px] rounded-[20px] text-[#EEE5DC] absolute">
+            <div className="bg-[#859974] mt-[90px] w-[369px] h-[250px] rounded-[20px] text-[#EEE5DC] relative">
               <div className="text-[32px] font-[400] leading-[130%] text-left w-[314px] mx-auto mt-[30px]">
                 <p>{data.name} </p>
               </div>

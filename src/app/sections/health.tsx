@@ -6,9 +6,18 @@ export default function Health() {
   return (
     <>
       <section className="health">
-        <div className="container w-[1200px] mt-[120px] flex content-between items-center mx-auto">
-          <div className="content text-left mr-[50px] ">
-            <h2 className="font-[400px] text-[42px] leading-[48px] mb-[35px]">
+        <div className="md:container w-full mt-[8.57rem] flex content-between items-center md:mx-auto">
+          <div className="content text-left lg:mx-auto md:mr-[3.57rem] md:ml-0 lg:ml-0">
+            <div className="md:hidden lg:hidden block max-w-full">
+              <Image
+                src={"/group2.jpg"}
+                width={401}
+                height={435}
+                alt="group2"
+                className="h-[31.07rem] w-full object-cover object-center mb-[4.29rem]"
+              ></Image>
+            </div>
+            <h2 className="font-[400px] text-[42px] leading-[48px] mb-[35px] ">
               Доверьте здоровье вашего тела
               <br />
               чутким и внимательным
@@ -25,10 +34,10 @@ export default function Health() {
               состояние вашего здоровья и предпочтения,
               <br />и уведомим об этом преподавателя
             </p>
-            <div className="flex">
+            <div className="flex flex-col md:flex-row ml-[1.43rem]">
               <Button
                 variant="solid"
-                className="flex h-[40px] w-[209px] justify-center items-center font-medium mr-[42px]"
+                className="flex h-[3.14rem] w-[16.43rem] justify-center items-center font-medium mr-[42px] mb-[0.57rem]"
               >
                 Записаться на йогу
                 <svg
@@ -47,7 +56,7 @@ export default function Health() {
               </Button>
               <Button
                 variant="outline"
-                className="flex h-[40px] w-[241px] justify-center items-center font-medium"
+                className="flex h-[3.14rem] w-[18.14rem] justify-center items-center font-medium"
               >
                 Перейти к расписанию
                 <svg
@@ -71,12 +80,12 @@ export default function Health() {
             width={372}
             height={404}
             alt="group2"
-            className="rounded-[20px] h-[404px] w-[372px] object-cover"
+            className="md:block lg:block hidden rounded-[20px] h-[404px] w-[372px] object-cover"
           ></Image>
         </div>
       </section>
       <section className="group-photo">
-        <div className="container mx-auto w-[1200px] mt-[107px]">
+        <div className="container mx-auto w-full mt-[107px] md:block hidden lg:block">
           <Image
             src={"/group3.jpg"}
             height={579}

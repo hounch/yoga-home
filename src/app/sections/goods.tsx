@@ -1,12 +1,13 @@
 "use client";
 import Image from "next/image";
 import { Button } from "../ui/button";
+import { Carousel } from "../ui/carousel";
 
 export default function Goods() {
   return (
     <>
       <section className="goods">
-        <div className="container flex mx-auto max-w-[1200px] mt-[100px]">
+        <div className="container flex mx-auto w-full mt-[100px]">
           <div className="goods-content text-left text-[#494542]">
             <h2 className="font-[400px] text-[42px] leading-[114%]">
               Вам не нужно ни о чем
@@ -15,7 +16,7 @@ export default function Goods() {
               <br />
               что вам нужно
             </h2>
-            <ul className="text-[22px] mt-[35px] mr-[277px] w-[463px] font-[400px] leading-[50px]">
+            <ul className="text-[22px] mt-[35px] mr-[277px] md:lg:w-[463px] w-full font-[400px] leading-[50px]">
               <li className="border-b-[1px] pl-[20px] pt-[6px] h-[53px]">
                 Весь инвентарь для йоги
               </li>
@@ -41,12 +42,12 @@ export default function Goods() {
             width={401}
             height={463}
             alt="studio9"
-            className="mt-4 w-full h-auto max-w-[400px] rounded-lg"
+            className="hidden md:block lg:block mt-4 w-full h-auto max-w-[400px] rounded-[20px]"
             sizes="(max-width: 640px) 90vw, 400px"
           ></Image>
         </div>
-        <div className="container mx-auto max-w-[1200px] text-center text-[#494542] pt-[89px]">
-          <div className="content flex justify-center w-[1200px] mb-[120px]">
+        <div className="container mx-auto w-full text-left md:text-center lg:mt-[6.43rem] text-[#494542] pt-[89px]">
+          <div className="content hidden md:flex justify-center w-full mb-[120px]">
             <Image
               src={"/studio10.jpg"}
               width={562}
@@ -62,22 +63,32 @@ export default function Goods() {
               className="rounded-[20px]"
             ></Image>
           </div>
+          {/* <div className="carousel hidden md:hidden pt-[107px]">
+            <Carousel type="Card2" />
+          </div> */}
+          <div
+            className="carousel block md:hidden lg:hidden pt-[107px]"
+            id="events"
+          >
+            <Carousel type="Card7" />
+          </div>
           <h2 className="font-[400px] text-[42px] leading-[114%]">
             Открывайте новое для себя
-            <br />
-            на мероприятиях в Йога Хом
+            <br className="hidden md:inline lg:inline" /> на мероприятиях в Йога
+            Хом
           </h2>
           <p className="text-[22px] mt-[35px] font-[400px] leading-[30px]">
             Йога Хом — это небольшая семья, и мы часто
-            <br />
-            устраиваем мероприятия в студии и на открытом
-            <br />
-            воздухе, проводим мастер-классы и встречи
-            <br />с приглашенными спикерами.
+            <br className="hidden md:inline lg:inline" /> устраиваем мероприятия
+            в студии и на открытом
+            <br className="hidden md:inline lg:inline" /> воздухе, проводим
+            мастер-классы и встречи
+            <br className="hidden md:inline lg:inline" /> с приглашенными
+            спикерами.
           </p>
           <Button
             variant="solid"
-            className="flex h-[40px] w-[223px] justify-center items-center mt-[40px] mx-auto"
+            className="hidden md:flex h-[40px] w-[223px] justify-center items-center mt-[40px] mx-auto"
           >
             Следить за новостями
             <svg

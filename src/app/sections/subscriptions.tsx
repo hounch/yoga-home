@@ -6,7 +6,7 @@ export default function Subscriptions() {
   return (
     <>
       <section className="one-time-subscription">
-        <div className="container mt-[120px] mx-auto max-w-[1200px] text-center text-[#494542]">
+        <div className="mt-[120px] mx-auto max-w-full text-center text-[#494542]">
           <h2 className="font-[400px] text-[42px] leading-[114%]">
             Разовые абонементы Йога Хом
           </h2>
@@ -16,7 +16,7 @@ export default function Subscriptions() {
         </div>
       </section>
       <section className="monthly-subscription">
-        <div className="container mt-[460px] mx-auto max-w-[1200px] text-center text-[#494542]">
+        <div className="mt-[102px] mx-auto max-w-full text-center text-[#494542]">
           <h2 className="font-[400px] text-[42px] leading-[48px]">
             Месячные абонементы Йога Хом
           </h2>

@@ -6,22 +6,27 @@ import Image from "next/image";
 export default function Main() {
   return (
     <>
-      <header className="fixed top-0 left-0 right-0 w-full z-50 bg-[#EEE5DC]">
-        <div className="container mx-auto px-[20px]">
-          <div className="header-content flex justify-between items-center h-[94px]">
-            <Image
-              className="header-content_logo"
-              src="/logo.png"
-              alt="logo"
-              quality={100}
-              width={56}
-              height={42}
-            ></Image>
-            <Navbar />
+      <header className="fixed top-0 left-0 right-0 w-full z-50 bg-[#EEE5DC] max-w-full">
+        <div className="container mx-auto px-[20px] max-w-full">
+          <div className="header-content flex justify-between items-center h-[94px] max-w-full">
+            <a href="#main">
+              <Image
+                className="header-content_logo"
+                src="/logo.png"
+                alt="logo"
+                quality={100}
+                width={56}
+                height={42}
+              ></Image>
+            </a>
+            <Navbar className="w-full" />
           </div>
         </div>
       </header>
-      <main className="main-page relative rounded-[20px] pt-[6.7rem] md:pt-[8.57rem]">
+      <main
+        className="main-page relative rounded-[20px] pt-[6.7rem] md:pt-[8.57rem]"
+        id="main"
+      >
         <div className="container mx-auto px-4 md:px-[20px]">
           <div className="main-content">
             <div className="main-text">

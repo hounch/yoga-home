@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { Button } from "../ui/button";
+import { Carousel } from "../ui/carousel";
 
 export default function Sertificates() {
   return (
@@ -12,7 +13,7 @@ export default function Sertificates() {
             Подарочные сертификаты
           </h2>
 
-          <div className="content max-w-[1200px] flex mt-[90px] justify-center">
+          <div className="hidden lg:flex md:flex content max-w-[1200px] mt-[90px] justify-center">
             <Image
               src={"/sertificate1.jpg"}
               width={559}
@@ -28,9 +29,12 @@ export default function Sertificates() {
               className={"object-cover"}
             ></Image>
           </div>
+          <div className="block lg:hidden md:hidden mt-[2.57rem]">
+            <Carousel type="Card8" />
+          </div>
           <Button
             variant="outline"
-            className="flex h-[40px] w-[330px] mt-[40px] justify-center items-center font-medium"
+            className="flex w-full md:h-[40px] md:w-[330px] md:mt-[40px] lg:h-[40px] lg:w-[330px] lg:mt-[40px] justify-center items-center lg:font-medium font-medium"
           >
             Приобрести сертификат/ абонемент
             <svg

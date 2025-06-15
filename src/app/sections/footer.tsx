@@ -5,18 +5,21 @@ import Image from "next/image";
 export default function Footer() {
   return (
     <>
-      <section className="bg-[#859974] footer mt-[66rem] mx-auto pt-[11rem] h-[54.1rem] w-[1200px] rounded-[20px]">
-        <div className="container mx-auto px-4 max-w-[1200px]">
-          <h2 className="text-3rem sm:text-3xl md:text-[42px] leading-tight text-[#EEE5DC] text-center">
+      <section
+        className="bg-[#859974] footer mt-0 mx-auto pt-[5.71rem] h-[54.1rem] w-full"
+        id="contacts"
+      >
+        <div className="container mx-auto px-4 max-w-full">
+          <h2 className="text-3rem sm:text-3xl md:text-[42px] leading-tight text-[#EEE5DC] md:text-center lg:text-center text-left">
             Присоединяйтесь к нам <br />и следите за обновлениями <br />
             Йога Хом в социальных сетях
           </h2>
-          <p className="text-[22px] mt-[35px] text-[#EEE5DC] text-center">
+          <p className="md:lg:block hidden text-[22px] mt-[35px] text-[#EEE5DC] text-center">
             Ждем вас на ковриках по адресу
             <br />
             ул. Северная 528А, 2 этаж
           </p>
-          <div className="icons flex flex-wrap justify-center gap-4 mt-6">
+          <div className="icons flex flex-wrap md:lg:justify-center justify-left gap-4 md:lg:mt-6 my-[35px]">
             <svg
               className="mr-[23px]"
               width="51"
@@ -64,6 +67,11 @@ export default function Footer() {
               height={54}
             ></Image>
           </div>
+          <p className="block md:lg:hidden text-[22px] mt-[35px] text-[#EEE5DC] text-left">
+            Ждем вас на ковриках по адресу
+            <br />
+            ул. Северная 528А, 2 этаж
+          </p>
         </div>
       </section>
     </>

@@ -240,3 +240,42 @@ export const CardData6 = [
     cost: "47 000 ₽",
   },
 ];
+
+export const CardData7 = [
+  {
+    imageSrc: "/studio10.jpg",
+  },
+  {
+    imageSrc: "/studio9.jpg",
+  },
+  {
+    imageSrc: "/studio11.JPG",
+  },
+  {
+    imageSrc: "/studio4.jpg",
+  },
+  {
+    imageSrc: "/studio6.jpg",
+  },
+  {
+    imageSrc: "/studio8.jpg",
+  },
+  {
+    imageSrc: "/event7.jpg",
+  },
+  {
+    imageSrc: "/event8.jpg",
+  },
+  {
+    imageSrc: "/event9.jpg",
+  },
+];
+
+export const CardData8 = [
+  {
+    imageSrc: "/sertificate1.jpg",
+  },
+  {
+    imageSrc: "/sertificate2.jpg",
+  },
+];
