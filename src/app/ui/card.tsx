@@ -45,7 +45,7 @@ export default function Card({ type, data }: CardProps) {
         return { width: 231, height: 163 };
       case "Card7":
         return { width: 295, height: 197 };
-      case "card8":
+      case "Card8":
         return { width: 350, height: 259 };
       default:
         return { width: 300, height: 200 };

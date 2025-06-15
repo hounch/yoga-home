@@ -19,7 +19,7 @@ export default function Main() {
                 height={42}
               ></Image>
             </a>
-            <Navbar className="w-full" />
+            <Navbar />
           </div>
         </div>
       </header>

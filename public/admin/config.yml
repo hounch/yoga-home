@@ -1,0 +1,10 @@
+backend:
+  name: test-repo
+  branch: main # Branch to update (optional; defaults to master)
+media_folder: "public/images"
+public_folder: "/images"
+
+collections:
+  - import: "classes.yml"
+  - import: "studio.yml"
+  - import: "events.yml"
