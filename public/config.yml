@@ -12,32 +12,38 @@ collections:
     folder: "content/trainers"
     create: true
     slug: "{{slug}}"
+    extension: "yml"
+    format: "yml"
     fields:
       - {label: "Имя", name: "name", widget: "string"}
       - {label: "Фото", name: "image", widget: "image"}
       - {label: "Порядок", name: "order", widget: "number", default: 1}
-      - {label: "Описание", name: "body", widget: "markdown"}
+      - {label: "Описание", name: "description", widget: "text"}
 
   - name: "single-classes"
     label: "Разовые занятия"
     folder: "content/single-classes"
     create: true
     slug: "{{slug}}"
+    extension: "yml"
+    format: "yml"
     fields:
       - {label: "Название", name: "name", widget: "string"}
       - {label: "Фото", name: "image", widget: "image"}
       - {label: "Цена", name: "cost", widget: "string"}
       - {label: "Порядок", name: "order", widget: "number", default: 1}
-      - {label: "Описание", name: "body", widget: "markdown"}
+      - {label: "Описание", name: "description", widget: "text"}
 
   - name: "subscriptions"
     label: "Абонементы"
     folder: "content/subscriptions"
     create: true
     slug: "{{slug}}"
+    extension: "yml"
+    format: "yml"
     fields:
       - {label: "Название", name: "name", widget: "string"}
       - {label: "Фото", name: "image", widget: "image"}
       - {label: "Цена", name: "cost", widget: "string"}
       - {label: "Порядок", name: "order", widget: "number", default: 1}
-      - {label: "Описание", name: "body", widget: "markdown"} 
+      - {label: "Описание", name: "description", widget: "text"} 
