@@ -2,8 +2,7 @@
 import { Carousel } from "../ui/carousel";
 
 interface TrainersProps {
-<<<<<<< Updated upstream
-	data: any[];
+	data: Array<Record<string, unknown>>;
 }
 
 export default function Trainers({ data }: TrainersProps) {

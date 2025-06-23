@@ -67,11 +67,17 @@ collections:
     folder: "content/trainers"
     create: true
     slug: "{{slug}}"
+<<<<<<< HEAD
 <<<<<<< Updated upstream
+=======
+    extension: "yml"
+    format: "yml"
+>>>>>>> 3e16b436f35ae07d4182e5c0790460f6d8d68c7f
     fields:
       - {label: "Имя", name: "name", widget: "string"}
       - {label: "Фото", name: "image", widget: "image"}
       - {label: "Порядок", name: "order", widget: "number", default: 1}
+<<<<<<< HEAD
       - {label: "Описание", name: "body", widget: "markdown"}
 =======
     extension: "yml"
@@ -82,18 +88,27 @@ collections:
       - { label: "Порядок", name: "order", widget: "number", default: 1 }
       - { label: "Описание", name: "description", widget: "text" }
 >>>>>>> Stashed changes
+=======
+      - {label: "Описание", name: "description", widget: "text"}
+>>>>>>> 3e16b436f35ae07d4182e5c0790460f6d8d68c7f
 
   - name: "single-classes"
     label: "Разовые занятия"
     folder: "content/single-classes"
     create: true
     slug: "{{slug}}"
+<<<<<<< HEAD
 <<<<<<< Updated upstream
+=======
+    extension: "yml"
+    format: "yml"
+>>>>>>> 3e16b436f35ae07d4182e5c0790460f6d8d68c7f
     fields:
       - {label: "Название", name: "name", widget: "string"}
       - {label: "Фото", name: "image", widget: "image"}
       - {label: "Цена", name: "cost", widget: "string"}
       - {label: "Порядок", name: "order", widget: "number", default: 1}
+<<<<<<< HEAD
       - {label: "Описание", name: "body", widget: "markdown"}
 =======
     extension: "yml"
@@ -105,18 +120,27 @@ collections:
       - { label: "Порядок", name: "order", widget: "number", default: 1 }
       - { label: "Описание", name: "description", widget: "text" }
 >>>>>>> Stashed changes
+=======
+      - {label: "Описание", name: "description", widget: "text"}
+>>>>>>> 3e16b436f35ae07d4182e5c0790460f6d8d68c7f
 
   - name: "subscriptions"
     label: "Абонементы"
     folder: "content/subscriptions"
     create: true
     slug: "{{slug}}"
+<<<<<<< HEAD
 <<<<<<< Updated upstream
+=======
+    extension: "yml"
+    format: "yml"
+>>>>>>> 3e16b436f35ae07d4182e5c0790460f6d8d68c7f
     fields:
       - {label: "Название", name: "name", widget: "string"}
       - {label: "Фото", name: "image", widget: "image"}
       - {label: "Цена", name: "cost", widget: "string"}
       - {label: "Порядок", name: "order", widget: "number", default: 1}
+<<<<<<< HEAD
       - {label: "Описание", name: "body", widget: "markdown"} 
 =======
     extension: "yml"
@@ -128,3 +152,6 @@ collections:
       - { label: "Порядок", name: "order", widget: "number", default: 1 }
       - { label: "Описание", name: "description", widget: "text" }
 >>>>>>> Stashed changes
+=======
+      - {label: "Описание", name: "description", widget: "text"} 
+>>>>>>> 3e16b436f35ae07d4182e5c0790460f6d8d68c7f

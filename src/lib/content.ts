@@ -1,6 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
+import yaml from 'js-yaml';
 
 function getContentData(folder: string) {
 	const contentDirectory = path.join(process.cwd(), 'content', folder);
@@ -13,20 +14,34 @@ function getContentData(folder: string) {
 	const allData = fileNames.map((fileName) => {
 		const filePath = path.join(contentDirectory, fileName);
 		const fileContents = fs.readFileSync(filePath, 'utf8');
-		const { data, content } = matter(fileContents);
+
+		let data: Record<string, unknown>;
+		let content = '';
+
+		// Проверяем расширение файла
+		if (fileName.endsWith('.yml') || fileName.endsWith('.yaml')) {
+			// Для YAML файлов
+			data = yaml.load(fileContents) as Record<string, unknown>;
+			content = (data.description as string) || '';
+		} else {
+			// Для Markdown файлов (обратная совместимость)
+			const parsed = matter(fileContents);
+			data = parsed.data;
+			content = parsed.content.trim();
+		}
 
 		return {
 			...data,
-			description: content.trim(),
+			description: content,
 			// Для обратной совместимости добавляем поля
 			imageSrc: data.image,
 			title: data.name,
-			order: data.order || 0,
+			order: (data.order as number) || 0,
 		};
 	});
 
 	// Сортировка по полю order
-	return allData.sort((a: any, b: any) => a.order - b.order);
+	return allData.sort((a: Record<string, unknown>, b: Record<string, unknown>) => (a.order as number) - (b.order as number));
 }
 
 // Универсальная функция для получения данных секций

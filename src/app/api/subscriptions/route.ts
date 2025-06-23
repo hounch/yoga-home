@@ -5,7 +5,7 @@ export async function GET() {
 	try {
 		const subscriptions = getCardData6();
 		return NextResponse.json(subscriptions);
-	} catch (error) {
+	} catch {
 		return NextResponse.json({ error: 'Failed to fetch subscriptions' }, { status: 500 });
 	}
 } 

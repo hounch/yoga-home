@@ -3,9 +3,8 @@
 import { Carousel } from "../ui/carousel";
 
 interface SubscriptionsProps {
-<<<<<<< Updated upstream
-	singleClassesData: any[];
-	subscriptionsData: any[];
+	singleClassesData: Array<Record<string, unknown>>;
+	subscriptionsData: Array<Record<string, unknown>>;
 }
 
 export default function Subscriptions({ singleClassesData, subscriptionsData }: SubscriptionsProps) {
