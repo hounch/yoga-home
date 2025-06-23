@@ -5,8 +5,16 @@ import { Carousel } from "../ui/carousel";
 export default function Rent() {
   return (
     <>
+<<<<<<< Updated upstream
       <section className="rent">
         <div className="container mx-auto max-w-[1200px] mt-[123px]">
+=======
+      <section
+        className="rent max-w-full md:lg:max-w-[1200px] lg:md:mx-auto"
+        id="rent"
+      >
+        <div className="container mx-auto max-w-full md:lg:max-w-[1200px] mt-[123px]">
+>>>>>>> Stashed changes
           <Carousel type="Card3" />
 
           <div className="rent-content text-[#494542] flex mt-[93px] justify-center items-center">

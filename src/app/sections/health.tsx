@@ -6,9 +6,24 @@ export default function Health() {
   return (
     <>
       <section className="health">
+<<<<<<< Updated upstream
         <div className="container w-[1200px] mt-[120px] flex content-between items-center mx-auto">
           <div className="content text-left mr-[50px] ">
             <h2 className="font-[400px] text-[42px] leading-[48px] mb-[35px]">
+=======
+        <div className=" max-w-full md:lg:max-w-[1200px] mt-[8.57rem] flex content-between items-center md:lg:mx-auto">
+          <div className="content text-left lg:mx-auto ">
+            <div className="md:hidden lg:hidden block max-w-full">
+              <Image
+                src={"/group2.jpg"}
+                width={401}
+                height={435}
+                alt="group2"
+                className="h-[31.07rem] w-full object-cover object-center mb-[4.29rem]"
+              ></Image>
+            </div>
+            <h2 className="font-[400px] text-[42px] leading-[48px] mb-[35px] ">
+>>>>>>> Stashed changes
               Доверьте здоровье вашего тела
               <br />
               чутким и внимательным
@@ -71,12 +86,20 @@ export default function Health() {
             width={372}
             height={404}
             alt="group2"
+<<<<<<< Updated upstream
             className="rounded-[20px] h-[404px] w-[372px] object-cover"
+=======
+            className="md:block lg:block hidden rounded-[20px] h-[404px] w-[372px] object-cover lg:md:mx-auto md:lg:max-w-[1200px]"
+>>>>>>> Stashed changes
           ></Image>
         </div>
       </section>
       <section className="group-photo">
+<<<<<<< Updated upstream
         <div className="container mx-auto w-[1200px] mt-[107px]">
+=======
+        <div className="mx-auto max-w-full md:lg:max-w-[1200px] mt-[107px] md:block hidden lg:block">
+>>>>>>> Stashed changes
           <Image
             src={"/group3.jpg"}
             height={579}

@@ -2,12 +2,21 @@
 import Image from "next/image";
 import { Button } from "../ui/button";
 
-export default function Goods() {
+interface EventsProps {
+  eventsData: Array<Record<string, unknown>>;
+}
+
+export default function Goods({ eventsData }: EventsProps) {
   return (
     <>
       <section className="goods">
+<<<<<<< Updated upstream
         <div className="container flex mx-auto max-w-[1200px] mt-[100px]">
           <div className="goods-content text-left text-[#494542]">
+=======
+        <div className=" flex mx-auto max-w-full md:lg:max-w-[1200px] mt-[100px]">
+          <div className="goods-content text-left text-[#494542] max-w-full md:lg:max-w-[1200px] lg:md:mx-auto">
+>>>>>>> Stashed changes
             <h2 className="font-[400px] text-[42px] leading-[114%]">
               Вам не нужно ни о чем
               <br />
@@ -15,7 +24,11 @@ export default function Goods() {
               <br />
               что вам нужно
             </h2>
+<<<<<<< Updated upstream
             <ul className="text-[22px] mt-[35px] mr-[277px] w-[463px] font-[400px] leading-[50px]">
+=======
+            <ul className="text-[22px] mt-[35px] mr-[277px] lg:md:mr-[100px] md:lg:w-[463px] w-full font-[400px] leading-[50px]">
+>>>>>>> Stashed changes
               <li className="border-b-[1px] pl-[20px] pt-[6px] h-[53px]">
                 Весь инвентарь для йоги
               </li>
@@ -62,6 +75,18 @@ export default function Goods() {
               className="rounded-[20px]"
             ></Image>
           </div>
+<<<<<<< Updated upstream
+=======
+          {/* <div className="carousel hidden md:hidden pt-[107px]">
+            <Carousel type="Card2" />
+          </div> */}
+          <div
+            className="carousel block md:hidden lg:hidden pt-[107px]"
+            id="events"
+          >
+            <Carousel type="Card7" data={eventsData} />
+          </div>
+>>>>>>> Stashed changes
           <h2 className="font-[400px] text-[42px] leading-[114%]">
             Открывайте новое для себя
             <br />

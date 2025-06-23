@@ -1,7 +1,11 @@
 "use client";
 import { Carousel } from "../ui/carousel";
 
-export default function Studio() {
+interface StudioProps {
+  studioData: Array<Record<string, unknown>>;
+}
+
+export default function Studio({ studioData }: StudioProps) {
   return (
     <>
       <section className="studio">
@@ -19,8 +23,13 @@ export default function Studio() {
               удовольствие от процесса познания вашего тела
             </p>
           </div>
+<<<<<<< Updated upstream
           <div className="carousel pt-[107px]">
             <Carousel type="Card2" />
+=======
+          <div className="carousel hidden w-[1200px] mx-auto md:block lg:block pt-[107px]">
+            <Carousel type="Card2" data={studioData} />
+>>>>>>> Stashed changes
           </div>
         </div>
       </section>

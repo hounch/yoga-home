@@ -7,37 +7,124 @@ media_folder: "public/uploads"
 public_folder: "/uploads"
 
 collections:
+<<<<<<< Updated upstream
+=======
+  # Студия
+  - name: "studio"
+    label: "Студия"
+    folder: "content/studio"
+    create: true
+    slug: "{{slug}}"
+    extension: "yml"
+    format: "yml"
+    fields:
+      - { label: "Фото", name: "imageSrc", widget: "image" }
+      - { label: "Название", name: "title", widget: "string" }
+      - { label: "Порядок", name: "order", widget: "number", default: 0 }
+
+  # Направления йоги
+  - name: "classes"
+    label: "Направления"
+    folder: "content/classes"
+    create: true
+    slug: "{{slug}}"
+    extension: "yml"
+    format: "yml"
+    fields:
+      - { label: "Название", name: "title", widget: "string" }
+      - { label: "Тип", name: "type", widget: "string", default: "группа" }
+      - {
+          label: "Стоимость",
+          name: "cost",
+          widget: "string",
+          default: "от 400 р",
+        }
+      - { label: "Описание", name: "description", widget: "text" }
+      - {
+          label: "Длительность",
+          name: "duration",
+          widget: "string",
+          default: "1ч",
+        }
+      - { label: "Фото", name: "imageSrc", widget: "image" }
+
+  # События
+  - name: "events"
+    label: "События"
+    folder: "content/events"
+    create: true
+    slug: "{{slug}}"
+    extension: "yml"
+    format: "yml"
+    fields:
+      - { label: "Фото", name: "imageSrc", widget: "image" }
+      - { label: "Название", name: "title", widget: "string" }
+      - { label: "Порядок", name: "order", widget: "number", default: 0 }
+
+>>>>>>> Stashed changes
   - name: "trainers"
     label: "Тренеры"
     folder: "content/trainers"
     create: true
     slug: "{{slug}}"
+<<<<<<< Updated upstream
     fields:
       - {label: "Имя", name: "name", widget: "string"}
       - {label: "Фото", name: "image", widget: "image"}
       - {label: "Порядок", name: "order", widget: "number", default: 1}
       - {label: "Описание", name: "body", widget: "markdown"}
+=======
+    extension: "yml"
+    format: "yml"
+    fields:
+      - { label: "Имя", name: "name", widget: "string" }
+      - { label: "Фото", name: "image", widget: "image" }
+      - { label: "Порядок", name: "order", widget: "number", default: 1 }
+      - { label: "Описание", name: "description", widget: "text" }
+>>>>>>> Stashed changes
 
   - name: "single-classes"
     label: "Разовые занятия"
     folder: "content/single-classes"
     create: true
     slug: "{{slug}}"
+<<<<<<< Updated upstream
     fields:
       - {label: "Название", name: "name", widget: "string"}
       - {label: "Фото", name: "image", widget: "image"}
       - {label: "Цена", name: "cost", widget: "string"}
       - {label: "Порядок", name: "order", widget: "number", default: 1}
       - {label: "Описание", name: "body", widget: "markdown"}
+=======
+    extension: "yml"
+    format: "yml"
+    fields:
+      - { label: "Название", name: "name", widget: "string" }
+      - { label: "Фото", name: "image", widget: "image" }
+      - { label: "Цена", name: "cost", widget: "string" }
+      - { label: "Порядок", name: "order", widget: "number", default: 1 }
+      - { label: "Описание", name: "description", widget: "text" }
+>>>>>>> Stashed changes
 
   - name: "subscriptions"
     label: "Абонементы"
     folder: "content/subscriptions"
     create: true
     slug: "{{slug}}"
+<<<<<<< Updated upstream
     fields:
       - {label: "Название", name: "name", widget: "string"}
       - {label: "Фото", name: "image", widget: "image"}
       - {label: "Цена", name: "cost", widget: "string"}
       - {label: "Порядок", name: "order", widget: "number", default: 1}
       - {label: "Описание", name: "body", widget: "markdown"} 
+=======
+    extension: "yml"
+    format: "yml"
+    fields:
+      - { label: "Название", name: "name", widget: "string" }
+      - { label: "Фото", name: "image", widget: "image" }
+      - { label: "Цена", name: "cost", widget: "string" }
+      - { label: "Порядок", name: "order", widget: "number", default: 1 }
+      - { label: "Описание", name: "description", widget: "text" }
+>>>>>>> Stashed changes
