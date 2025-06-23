@@ -5,15 +5,9 @@ import Image from "next/image";
 export default function Meditation() {
   return (
     <>
-<<<<<<< Updated upstream
-      <section className="meditation mx-auto">
-        <div className="container flex justify-between mt-[120px] mx-auto max-w-[1200px] text-[#494542]">
-          <div className="content max-w-[1200px] text-left mr-[50px]">
-=======
       <section className="meditation mx-auto" id="massage">
         <div className="md:container lg:container md:flex lg:flex md:justify-between lg:justify-between mt-[120px] mx-auto max-w-full md:lg:max-w-[1200px] text-[#494542]">
           <div className="md:block lg:block hidden content max-w-[1200px] text-left mr-[50px]">
->>>>>>> Stashed changes
             <h2 className="font-[400px] text-[42px] leading-[48px]">
               Посетите практики <br />
               гвоздестояния и медитаций <br />с поющими чашами
@@ -44,11 +38,7 @@ export default function Meditation() {
           </div>
         </div>
         <section className="group-photo">
-<<<<<<< Updated upstream
-          <div className="container mx-auto w-[1200px] mt-[149px]">
-=======
           <div className="md:container lg:container mx-auto max-w-full md:lg:max-w-[1200px] mt-[149px]">
->>>>>>> Stashed changes
             <Image
               src={"/class5.jpg"}
               alt={"class5"}

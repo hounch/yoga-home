@@ -6,19 +6,6 @@ import Image from "next/image";
 export default function Main() {
   return (
     <>
-<<<<<<< Updated upstream
-      <header className="fixed top-0 left-0 right-0 w-full z-50 bg-[#EEE5DC]">
-        <div className="container mx-auto px-[20px]">
-          <div className="header-content flex justify-between items-center h-[94px]">
-            <Image
-              className="header-content_logo"
-              src="/logo.png"
-              alt="logo"
-              quality={100}
-              width={56}
-              height={42}
-            ></Image>
-=======
       <header className="fixed top-0 left-0 right-0 w-full z-50 bg-[#EEE5DC] max-w-full">
         <div className="container mx-auto px-[20px] max-w-full md:lg:max-w-[1200px]">
           <div className="header-content flex justify-between items-center h-[94px] max-w-full">
@@ -32,23 +19,16 @@ export default function Main() {
                 height={42}
               ></Image>
             </a>
->>>>>>> Stashed changes
             <Navbar />
           </div>
         </div>
       </header>
-<<<<<<< Updated upstream
-      <main className="main-page relative rounded-[20px] pt-[6.7rem] md:pt-[8.57rem]">
-        <div className="container mx-auto px-4 md:px-[20px]">
-          <div className="main-content">
-=======
       <main
         className="main-page relative rounded-[20px] pt-[6.7rem] md:pt-[8.57rem]"
         id="main"
       >
         <div className="container mx-auto px-4 md:px-[20px] max-w-full md:lg:max-w-[1200px]">
           <div className="main-content md:lg:mx-auto max-w-full md:lg:max-w-[1200px]">
->>>>>>> Stashed changes
             <div className="main-text">
               <h2 className="text-3rem sm:text-3xl md:text-[42px] leading-tight">
                 Добро пожаловать в Йога Хом, место силы и спокойствия

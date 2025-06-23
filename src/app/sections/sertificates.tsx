@@ -12,11 +12,7 @@ export default function Sertificates() {
             Подарочные сертификаты
           </h2>
 
-<<<<<<< Updated upstream
-          <div className="content max-w-[1200px] flex mt-[90px] justify-center">
-=======
           <div className="hidden lg:flex md:flex content mx-auto md:lg:max-w-[1200px] mt-[90px] justify-center">
->>>>>>> Stashed changes
             <Image
               src={"/sertificate1.jpg"}
               width={559}

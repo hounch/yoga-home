@@ -5,18 +5,12 @@ import Image from "next/image";
 export default function Footer() {
   return (
     <>
-<<<<<<< Updated upstream
-      <section className="bg-[#859974] footer mt-[66rem] mx-auto pt-[11rem] h-[54.1rem] w-[1200px] rounded-[20px]">
-        <div className="container mx-auto px-4 max-w-[1200px]">
-          <h2 className="text-3rem sm:text-3xl md:text-[42px] leading-tight text-[#EEE5DC] text-center">
-=======
       <section
         className="bg-[#859974] footer mt-0 pt-[5.71rem] h-[54.1rem] mx-auto max-w-full md:lg:max-w-[1200px]"
         id="contacts"
       >
         <div className=" mx-auto px-4 max-w-full md:lg:max-w-[1200px]">
           <h2 className="text-3rem sm:text-3xl md:text-[42px] leading-tight text-[#EEE5DC] md:text-center lg:text-center text-left">
->>>>>>> Stashed changes
             Присоединяйтесь к нам <br />и следите за обновлениями <br />
             Йога Хом в социальных сетях
           </h2>

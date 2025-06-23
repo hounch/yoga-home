@@ -5,21 +5,12 @@ import { Carousel } from "../ui/carousel";
 export default function Classes() {
   return (
     <>
-<<<<<<< Updated upstream
-      <section className="classes py-12 md:pt-[88px]">
-        <div className="container mx-auto px-4 md:px-5 max-w-[1200px]">
-          <div className="text-center mb-8 md:mb-[101px]">
-            <h2 className="text-2xl md:text-[42px]">
-              Выбери одно или несколько
-              <br />
-=======
       <section className="classes py-12 md:pt-[88px]" id="classes">
         <div className="container mx-auto lg:md:text-center px-4 md:px-5 max-w-full md:lg:max-w-[1200px]">
           <div className="text-center mb-8 md:mb-[101px] max-w-full md:lg:max-w-[1200px] lg:md:mx-auto">
             <h2 className="text-2xl md:text-[42px] md:text-center text-left">
               Выбери одно или несколько<span> </span>
               <span className="md:hidden inline">из 10 </span>
->>>>>>> Stashed changes
               направлений йоги себе по душе
             </h2>
             <p className="mt-4 md:mt-[35px] text-lg md:text-[22px]">
@@ -29,12 +20,6 @@ export default function Classes() {
               авторских техник преподавателей нашей студии
             </p>
           </div>
-<<<<<<< Updated upstream
-          <div className="carousel">
-            <Carousel type="Card1" />
-          </div>
-          <div className="flex flex-col md:flex-row gap-4 mt-8 md:mt-[40px]">
-=======
           <div className="md:hidden flex flex-col gap-4 mt-8 mb-[5.75rem]">
             <Button variant="solid" className="w-[18rem]">
               Перейти к расписанию
@@ -73,7 +58,6 @@ export default function Classes() {
             <Carousel type="Card1" />
           </div>
           <div className="hidden md:flex flex-col md:flex-row gap-4 mt-8 md:mt-[40px] max-w-full md:lg:max-w-[1200px] lg:md:mx-auto">
->>>>>>> Stashed changes
             <Button variant="solid" className="w-full md:w-[228px]">
               Перейти к расписанию
               <svg

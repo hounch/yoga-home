@@ -5,13 +5,8 @@ export default function Intro() {
   return (
     <>
       <section className="intro">
-<<<<<<< Updated upstream
-        <div className="container mr-auto ml-auto pr-[20px] pl-[20px] pt-[90px]">
-          <div className="studio-content text-center text-[#494542]">
-=======
         <div className="container mx-auto pr-[20px] pl-[20px] pt-[90px] mt-[6rem] max-w-full md:lg:max-w-[1200px]">
           <div className="studio-content text-center text-[#494542] max-w-full md:lg:max-w-[1200px] lg:md:mx-auto">
->>>>>>> Stashed changes
             <h2 className="font-[400px] text-[42px] leading-[114%]">
               Йога хом — это дом здорового тела,{" "}
               <span className="mobile-show">вашей </span>красоты и{" "}
@@ -28,11 +23,7 @@ export default function Intro() {
               стать увереннее и счастливее
             </p>
           </div>
-<<<<<<< Updated upstream
-          <div className="flex justify-evenly mt-[91px] mb-[33px]">
-=======
           <div className="hidden md:lg:justify-center md:flex mt-[91px] mb-[33px]">
->>>>>>> Stashed changes
             <Image
               src="/main1.jpg"
               className="rounded-[20px] lg:md:mr-[20px]"
