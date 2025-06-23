@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import { Button } from "../ui/button";
+import { Carousel } from "../ui/carousel";
 
 interface EventsProps {
   eventsData: Array<Record<string, unknown>>;

@@ -6,7 +6,7 @@ import Studio from "./sections/studio";
 import Goods from "./sections/goods";
 import Rent from "./sections/rent";
 import GroupPhoto from "./sections/groupPhoto";
-import TrainersWrapper from "./sections/trainers";
+import Trainers from "./sections/trainers";
 import Health from "./sections/health";
 import Subscriptions from "./sections/subscriptions";
 import Sertificates from "./sections/sertificates";
@@ -18,7 +18,7 @@ export default async function Home() {
   const classesData = getSectionData("classes");
   const studioData = getSectionData("studio");
   const eventsData = getSectionData("events");
-  const trainersData = getSectionData("trainers");
+  const data = getSectionData("trainers");
   const singleClassesData = getSectionData("single-classes");
   const subscriptionsData = getSectionData("subscriptions");
 
@@ -31,7 +31,7 @@ export default async function Home() {
       <Goods eventsData={eventsData} />
       <Rent />
       <GroupPhoto />
-      <TrainersWrapper serverData={trainersData} />
+      <Trainers data={data} />
       <Health />
       <Subscriptions
         singleClassesData={singleClassesData}

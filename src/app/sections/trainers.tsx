@@ -1,12 +1,11 @@
 "use client";
 import { Carousel } from "../ui/carousel";
-import { useEffect, useState } from "react";
 
 interface TrainersProps {
-  serverData: Array<Record<string, unknown>>;
+  data: Array<Record<string, unknown>>;
 }
 
-function TrainersClient({ data }: TrainersProps["serverData"]) {
+export default function Trainers({ data }: TrainersProps) {
   return (
     <>
       <section className="trainers">
@@ -22,7 +21,4 @@ function TrainersClient({ data }: TrainersProps["serverData"]) {
       </section>
     </>
   );
-}
-export default function TrainersWrapper({ serverData }: TrainersProps) {
-  return <TrainersClient data={serverData} />;
 }
