@@ -38,7 +38,7 @@ export default function Studio({ studioData }: StudioProps) {
             <Carousel type="Card2" data={studioData} />
           </div>
         </div>
-        <div className="studio-image mt-[4.29rem]">
+        <div className="studio-image mt-[4.29rem] md:lg:hidden block">
           <Image
             src="/studio5.jpg"
             className="h-[471px] object-cover"
